@@ -15,10 +15,12 @@
 @import "global/utils";
 @import "global/container";
 @import "global/title";
+@import "global/wrapper";
 
 // Blocks
 // ---------------------------------
-
+@import "blocks/index/header/header";
+@import "blocks/index/header/menu";
 
 // ---------------------------------
 

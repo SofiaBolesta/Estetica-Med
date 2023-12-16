@@ -1158,33 +1158,54 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
-@font-face {
-  font-style: italic;
-  font-weight: 400;
-  font-family: "NotoSans-italic";
-  font-display: swap;
-  src: url("../fonts/NotoSans-Italic.woff") format("woff"), url("../fonts/NotoSans-Italic.woff2") format("woff2");
+/*@mixin vp-375 {
+  @media (min-width: $vp-375) {
+    @content;
+  }
 }
+
+@mixin vp-768 {
+  @media (min-width: $vp-768) {
+    @content;
+  }
+}
+
+@mixin vp-1024 {
+  @media (min-width: $vp-1024) {
+    @content;
+  }
+}
+
+@mixin vp-1280 {
+  @media (min-width: $vp-1280) {
+    @content;
+  }
+}
+
+@mixin vp-1440 {
+  @media (min-width: $vp-1440) {
+    @content;
+  }
+}
+
+@mixin vp-1920 {
+  @media (min-width: $vp-1920) {
+    @content;
+  }
+}*/
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "NotoSans-regular";
+  font-family: "PTSansCaption-Regular";
   font-display: swap;
-  src: url("../fonts/NotoSans-Regular.woff") format("woff"), url("../fonts/NotoSans-Regular.woff2") format("woff2");
+  src: url("../fonts/PT_Sans-Caption-Regular.woff") format("woff"), url("../fonts/PT_Sans-Caption-Regular.woff2") format("woff2");
 }
 @font-face {
   font-style: normal;
-  font-weight: 500;
-  font-family: "NotoSans-medium";
+  font-weight: 700;
+  font-family: "PTSansCaption-Bold";
   font-display: swap;
-  src: url("../fonts/NotoSans-Medium.woff") format("woff"), url("../fonts/NotoSans-Medium.woff2") format("woff2");
-}
-@font-face {
-  font-style: normal;
-  font-weight: 600;
-  font-family: "NotoSans-SemiBold";
-  font-display: swap;
-  src: url("../fonts/RobotoCondensed-Bold.woff") format("woff"), url("../fonts/RobotoCondensed-Bold.woff2") format("woff2");
+  src: url("../fonts/PT_Sans-Caption-Bold.woff") format("woff"), url("../fonts/PT_Sans-Caption-Bold.woff2") format("woff2");
 }
 *,
 *::before,
@@ -1216,12 +1237,12 @@ html {
 body {
   width: 100%;
   height: 100%;
-  font-family: "NotoSans-regular", "Arial", sans-serif;
+  font-family: "PTSansCaption-Regular", "Arial", sans-serif;
   background-color: #ffffff;
 }
 
 a {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -1394,27 +1415,23 @@ button,
   outline: none;
 }
 
-.container {
+/*.container {
   width: 100%;
   margin: 0 auto;
   padding: 0 40px;
-}
-@media (max-width: 1439px) {
-  .container {
+
+  @include vp-1439 {
     padding: 0 32px;
   }
-}
-@media (max-width: 1023px) {
-  .container {
+
+  @include vp-1023 {
     padding: 0 45px;
   }
-}
-@media (max-width: 767px) {
-  .container {
+
+  @include vp-767 {
     padding: 0 16px;
   }
-}
-
+}*/
 .title {
   font-family: "NotoSans-SemiBold", "Arial", sans-serif;
   font-weight: 600;
@@ -1442,6 +1459,173 @@ button,
   width: 140px;
   height: 2px;
   background-color: #00c6bd;
+}
+
+.wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.header {
+  width: 100%;
+  padding: 0;
+}
+
+.header__wrapper {
+  padding: 0 0 100px;
+  position: relative;
+}
+
+.header__container-menu {
+  max-width: 1716px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px 100px 22px;
+  gap: 30px 0;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto 90px;
+}
+
+.header__logo-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  gap: 15px 56px;
+}
+
+.header__social-link {
+  display: block;
+  width: 100%;
+  max-height: 72px;
+}
+
+.header__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 100px;
+  position: relative;
+  z-index: 2;
+}
+
+.header__content h2 {
+  max-width: 933px;
+  color: #ffffff;
+  text-align: center;
+  font-family: "PT_SansCaption-Bold", "Arial", sans-serif;
+  font-size: 60px;
+  line-height: normal;
+  margin: 0 0 23px;
+}
+
+.header__content p {
+  max-width: 637px;
+  color: #ffffff;
+  margin: 0 0 29px;
+  text-align: center;
+  font-size: 37px;
+  line-height: normal;
+}
+
+.header__button {
+  color: #ffffff;
+  text-align: center;
+  font-family: "PT_SansCaption-Bold", "Arial", sans-serif;
+  font-size: 35px;
+  line-height: normal;
+  padding: 23px;
+  font-weight: 700;
+  border-radius: 10px;
+  background: #18bcbc;
+  border: none;
+  width: 748px;
+}
+
+.header__overlay {
+  position: absolute;
+  z-index: 1;
+  top: 1px;
+  width: 100%;
+  min-height: 1024px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(16.77%, #18bcbc), color-stop(85.61%, rgba(24, 188, 188, 0)));
+  background: linear-gradient(180deg, #18bcbc 16.77%, rgba(24, 188, 188, 0) 85.61%);
+}
+
+.header__background {
+  position: absolute;
+  z-index: 0;
+  top: 80px;
+  width: 100%;
+}
+
+.header__background img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 15px 10px;
+}
+
+.menu__link {
+  display: block;
+  color: #ffffff;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 10px;
 }
 
 /* @mixin hover-focus {
