@@ -1433,32 +1433,28 @@ button,
   }
 }*/
 .title {
-  font-family: "NotoSans-SemiBold", "Arial", sans-serif;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 34px;
-  color: #163152;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 49px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0 0 40px;
+  font-family: "PTSansCaption-Bold", "Arial", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: normal;
+  font-style: normal;
+  background-color: #18bcbc;
 }
-.title::after {
+
+.title__desktop {
+  font-size: 50px;
+  padding: 42px 100px 43px 166px;
+  position: relative;
+  margin: 0 0 80px;
+}
+.title__desktop::before {
   content: "";
-  width: 140px;
-  height: 2px;
-  background-color: #00c6bd;
+  position: absolute;
+  width: 46px;
+  height: 99px;
+  left: 102px;
+  top: 26px;
+  background: url("../img/svg/title-desktop.svg") center no-repeat;
 }
 
 .wrapper {
@@ -1469,7 +1465,9 @@ button,
 
 .header {
   width: 100%;
+  min-height: 1102px;
   padding: 0;
+  margin: 0 0 142px;
 }
 
 .header__wrapper {
@@ -1565,11 +1563,10 @@ button,
 .header__button {
   color: #ffffff;
   text-align: center;
-  font-family: "PT_SansCaption-Bold", "Arial", sans-serif;
+  font-family: "PTSansCaption-Bold", "Arial", sans-serif;
   font-size: 35px;
   line-height: normal;
   padding: 23px;
-  font-weight: 700;
   border-radius: 10px;
   background: #18bcbc;
   border: none;
@@ -1581,7 +1578,7 @@ button,
   z-index: 1;
   top: 1px;
   width: 100%;
-  min-height: 1024px;
+  min-height: 1101px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(16.77%, #18bcbc), color-stop(85.61%, rgba(24, 188, 188, 0)));
   background: linear-gradient(180deg, #18bcbc 16.77%, rgba(24, 188, 188, 0) 85.61%);
 }
@@ -1591,6 +1588,7 @@ button,
   z-index: 0;
   top: 80px;
   width: 100%;
+  max-height: 1024px;
 }
 
 .header__background img {
@@ -1598,6 +1596,7 @@ button,
      object-fit: cover;
   background-color: #ffffff;
   width: 100%;
+  max-height: 1024px;
 }
 
 .menu__list {
@@ -1626,6 +1625,104 @@ button,
   font-weight: 400;
   line-height: normal;
   padding: 10px;
+}
+
+.advantages {
+  width: 100%;
+  margin-bottom: 170px;
+}
+
+.advantages__wrapper {
+  width: 100%;
+}
+
+.advantages__main-content {
+  max-width: 1719px;
+  margin: 0 auto;
+}
+
+.content__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(auto, 543px));
+  grid-template-rows: repeat(auto-fit, minmax(576px, auto));
+  gap: 80px 45px;
+}
+
+.content__item {
+  background-color: rgba(24, 188, 188, 0.6);
+}
+
+.content__wrapper-icon {
+  width: 543px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 543px;
+  grid-template-columns: 543px;
+  grid-template-rows: repeat(auto-fit, minmax(100px, auto));
+}
+
+.content__background-icon {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.content__icon {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  padding: 15px 30px 54px 30px;
+}
+
+.content__text h3 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "PTSansCaption-Bold", "Arial", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+
+.content__text p {
+  color: #ffffff;
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.content__item--changes-text h3 {
+  letter-spacing: -1.68px;
 }
 
 /* @mixin hover-focus {
