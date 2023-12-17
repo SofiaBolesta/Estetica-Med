@@ -4,6 +4,8 @@
 @import "vendor/normalize";
 // Swiper 7.4.1
 @import "vendor/swiper";
+@import "vendor/accordion";
+@import "vendor/data-accordion";
 
 // Global
 // ---------------------------------
@@ -23,6 +25,14 @@
 @import "blocks/index/header/menu";
 @import "blocks/index/main/advantages/advantages";
 @import "blocks/index/main/advantages/content";
+@import "blocks/index/main/services/services";
+@import "blocks/index/main/services/cosmetology";
+@import "blocks/index/main/services/thread-lifting";
+@import "blocks/index/main/services/elos";
+@import "blocks/index/main/services/aesthetics";
+@import "blocks/index/main/services/wrap-body";
+@import "blocks/index/main/services/massage";
+@import "blocks/index/main/services/epilation";
 
 // ---------------------------------
 

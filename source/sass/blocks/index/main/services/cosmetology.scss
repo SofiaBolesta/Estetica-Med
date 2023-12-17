@@ -1,0 +1,24 @@
+.cosmetology {
+  width: 573px;
+}
+
+.cosmetology-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.cosmetology__item {
+  background-color: #18bcbc;
+}
+
+.cosmetology__link {
+  display: block;
+  font-family: "PTSansCaption-Bold", "Arial", sans-serif;
+  font-size: 25px;
+  color: #ffffff;
+  padding: 20px 10px 20px 36px;
+}

@@ -1,0 +1,67 @@
+.services__accordion-shell {
+  max-width: 1316px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0 30px;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.services__accordion-cosmetology {
+  width: 100%;
+}
+
+.services__accordion-element-cosmetology {
+  padding: 0;
+}
+
+.services__accordion-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  font-family: "PTSansCaption-Bold", "Arial", sans-serif;
+  font-size: 30px;
+  gap: 0 20px;
+  background-color: #18bcbc;
+  border: 0;
+}
+
+.services__accordion-button p {
+  margin: 0;
+}
+
+.services__icon {
+  order: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services__icon svg {
+  margin: auto;
+}
+
+.services__icon-open--hidden,
+.services__icon-close--hidden {
+  display: none;
+}
+
+.services__accordion-wrapper {
+  padding: 15px 0 0;
+}
+
+/*.services__icon-close {
+  display: block;
+  order: 2;
+}
+
+.services__icon--hidden {
+  display: none;
+}
+
+.services__accordion-wrapper {
+  padding: 0;
+}*/
+
