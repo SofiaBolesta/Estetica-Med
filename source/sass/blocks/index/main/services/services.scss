@@ -2,7 +2,7 @@
   max-width: 1316px;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 0 auto 140px;
   padding: 0 30px;
   gap: 20px;
   justify-content: space-between;
@@ -26,9 +26,6 @@
   gap: 0 20px;
   background-color: #18bcbc;
   border: 0;
-}
-
-.services__accordion-button p {
   margin: 0;
 }
 

@@ -333,7 +333,7 @@ template {
   font-style: normal;
 }
 :root {
-  --swiper-theme-color: #007aff;
+  --swiper-theme-color: #18bcbc;
 }
 
 .swiper {
@@ -556,7 +556,7 @@ template {
 }
 
 :root {
-  --swiper-navigation-size: 44px;
+  --swiper-navigation-size: 67px;
   /*
   --swiper-navigation-color: var(--swiper-theme-color);
   */
@@ -1774,7 +1774,7 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 0 auto 140px;
   padding: 0 30px;
   gap: 20px;
   -webkit-box-pack: justify;
@@ -1806,9 +1806,6 @@ button,
   gap: 0 20px;
   background-color: #18bcbc;
   border: 0;
-}
-
-.services__accordion-button p {
   margin: 0;
 }
 
@@ -2313,6 +2310,110 @@ button,
   font-size: 25px;
   color: #ffffff;
   padding: 20px 10px 20px 36px;
+}
+
+.specialist {
+  width: 100%;
+}
+
+.specialist__swiper {
+  max-width: 1718px;
+}
+
+.specialist__container-swiper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 1718px;
+  margin: 0 auto;
+}
+
+.specialist__swiper-wrapper {
+  max-width: 1451px;
+}
+
+.specialist__kitaevskaya,
+.specialist__drozdova,
+.specialist__baeva,
+.specialist__gorogantseva,
+.specialist__teterina,
+.specialist__ermilina {
+  max-width: 622px;
+}
+
+.specialist__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(auto, 622px);
+  grid-template-columns: minmax(auto, 622px);
+  -ms-grid-rows: minmax(auto, 540px) minmax(auto, 144px);
+  grid-template-rows: minmax(auto, 540px) minmax(auto, 144px);
+  max-width: 622px;
+  max-height: 684px;
+}
+
+.specialist__photo {
+  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  grid-row: 1/-1;
+  width: 100%;
+  max-height: 682px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.specialist__kitaevskaya .specialist__photo img,
+.specialist__drozdova .specialist__photo img,
+.specialist__baeva .specialist__photo img,
+.specialist__gorogantseva .specialist__photo img,
+.specialist__teterina .specialist__photo img,
+.specialist__ermilina .specialist__photo img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.specialist__text {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  background-color: #18bcbc;
+}
+
+.specialist__text p {
+  color: #ffffff;
+  text-align: center;
+  font-family: "PTSansCaption-Bold", "Arial", sans-serif;
+  font-size: 35px;
+  line-height: normal;
+  max-width: 435px;
+  margin: 0;
 }
 
 /* @mixin hover-focus {

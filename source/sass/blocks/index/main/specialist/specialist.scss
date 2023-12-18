@@ -1,0 +1,78 @@
+.specialist {
+  width: 100%;
+}
+
+.specialist__swiper {
+  max-width: 1718px;
+}
+
+.specialist__container-swiper {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  max-width: 1718px;
+  margin: 0 auto;
+}
+
+.specialist__swiper-wrapper {
+  max-width: 1451px;
+}
+
+.specialist__kitaevskaya,
+.specialist__drozdova,
+.specialist__baeva,
+.specialist__gorogantseva,
+.specialist__teterina,
+.specialist__ermilina {
+  max-width: 622px;
+}
+
+.specialist__content {
+  display: grid;
+  grid-template-columns: minmax(auto, 622px);
+  grid-template-rows: minmax(auto, 540px) minmax(auto, 144px);
+  max-width: 622px;
+  max-height: 684px;
+}
+
+.specialist__photo {
+  display: block;
+  flex-direction: column;
+  grid-column: 1;
+  grid-row: 1/-1;
+  width: 100%;
+  max-height: 682px;
+  justify-content: center;
+  align-items: center;
+}
+
+.specialist__kitaevskaya .specialist__photo img,
+.specialist__drozdova .specialist__photo img,
+.specialist__baeva .specialist__photo img,
+.specialist__gorogantseva .specialist__photo img,
+.specialist__teterina .specialist__photo img,
+.specialist__ermilina .specialist__photo img, {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.specialist__text {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #18bcbc;
+}
+
+.specialist__text p {
+  color: #ffffff;
+  text-align: center;
+  font-family: "PTSansCaption-Bold", "Arial", sans-serif;
+  font-size: 35px;
+  line-height: normal;
+  max-width: 435px;
+  margin: 0;
+}
