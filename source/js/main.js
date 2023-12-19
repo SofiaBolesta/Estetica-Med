@@ -7,6 +7,7 @@ import {
   showButtonWrapBody
 } from './accordions-button';
 import {initSpecialistSwiper} from './specialist-swiper';
+import {initModalGallery} from './modal-gallery';
 window.addEventListener('DOMContentLoaded', () => {
   // Utils
   // ---------------------------------
@@ -25,5 +26,6 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initAccordions();
+    initModalGallery();
   });
 });

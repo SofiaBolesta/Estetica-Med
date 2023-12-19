@@ -1,0 +1,18 @@
+.certificates__content {
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+.certificates__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 25px;
+}
+
+.certificates__gallery img {
+  max-width: 480px;
+  max-height: 480px;
+  margin: 5px;
+  cursor: pointer;
+}
