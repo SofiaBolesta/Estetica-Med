@@ -6,6 +6,10 @@
   padding: 0 30px;
   gap: 20px;
   justify-content: space-between;
+
+  @include vp-1023 {
+    margin: 0 auto 60px;
+  }
 }
 
 .services__accordion-cosmetology {
@@ -27,6 +31,11 @@
   background-color: #18bcbc;
   border: 0;
   margin: 0;
+
+  @include vp-1023 {
+    font-size: 16px;
+    padding: 7px 8px 6px 20px;
+  }
 }
 
 .services__icon {
@@ -36,8 +45,11 @@
   justify-content: center;
 }
 
-.services__icon svg {
-  margin: auto;
+.services__icon-wrapper img {
+  @include vp-1023 {
+    width: 36px;
+    height: 36px;
+  }
 }
 
 .services__icon-open--hidden,
@@ -48,17 +60,4 @@
 .services__accordion-wrapper {
   padding: 15px 0 0;
 }
-
-/*.services__icon-close {
-  display: block;
-  order: 2;
-}
-
-.services__icon--hidden {
-  display: none;
-}
-
-.services__accordion-wrapper {
-  padding: 0;
-}*/
 

@@ -1,6 +1,10 @@
 .specialist {
   width: 100%;
   margin-bottom: 170px;
+
+  @include vp-1023 {
+    margin-bottom: 80px;
+  }
 }
 
 .specialist__swiper {
@@ -11,8 +15,9 @@
   display: flex;
   position: relative;
   flex-direction: row;
-  max-width: 1718px;
+  max-width: 1800px;
   margin: 0 auto;
+  padding: 0 40px;
 }
 
 .specialist__swiper-wrapper {
@@ -26,6 +31,10 @@
 .specialist__teterina,
 .specialist__ermilina {
   max-width: 622px;
+
+  @include vp-1023 {
+    max-width: 251px;
+  }
 }
 
 .specialist__content {
@@ -34,6 +43,13 @@
   grid-template-rows: minmax(auto, 540px) minmax(auto, 144px);
   max-width: 622px;
   max-height: 684px;
+  margin: 0 auto;
+
+  @include vp-1023 {
+    max-width: 251px;
+    grid-template-rows: minmax(auto, 215px) minmax(auto, 60px);
+    /*max-height: 276px;*/
+  }
 }
 
 .specialist__photo {
@@ -45,6 +61,10 @@
   max-height: 682px;
   justify-content: center;
   align-items: center;
+
+  @include vp-1023 {
+    max-height: 276px;
+  }
 }
 
 .specialist__kitaevskaya .specialist__photo img,
@@ -76,4 +96,16 @@
   line-height: normal;
   max-width: 435px;
   margin: 0;
+
+  @include vp-1023 {
+    font-size: 20px;
+  }
+}
+
+.specialist__swiper-button::after {
+  font-size: 67px;
+
+  @include vp-1023 {
+    font-size: 40px;
+  }
 }

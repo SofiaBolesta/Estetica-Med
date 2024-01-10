@@ -1,5 +1,9 @@
 .aesthetics {
   width: 573px;
+
+  @include vp-1023 {
+    width: 350px;
+  }
 }
 
 .aesthetics__accordion {
@@ -17,6 +21,11 @@
   gap: 0 20px;
   background-color: #18bcbc;
   border: 0;
+
+  @include vp-1023 {
+    font-size: 16px;
+    padding: 7px 8px 6px 20px;
+  }
 }
 
 .aesthetics__accordion-button p {
@@ -30,29 +39,14 @@
   justify-content: center;
 }
 
-.aesthetics__icon svg {
-  margin: auto;
+.aesthetics__icon-wrapper img {
+  @include vp-1023 {
+    width: 36px;
+    height: 36px;
+  }
 }
 
 .aesthetics__icon-open--hidden,
 .aesthetics__icon-close--hidden {
   display: none;
-}
-
-.elos__accordion-wrapper {
-  padding: 0;
-}
-
-.elos__accordion-list {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-.elos__link {
-  display: block;
-  font-family: "PTSansCaption-Bold", "Arial", sans-serif;
-  font-size: 25px;
-  color: #ffffff;
-  padding: 20px 10px 20px 36px;
 }

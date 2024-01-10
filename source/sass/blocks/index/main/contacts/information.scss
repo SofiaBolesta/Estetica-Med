@@ -5,6 +5,12 @@
   line-height: normal;
   margin: 0 auto 40px;
   max-width: 462px;
+
+  @include vp-1023 {
+    font-size: 28px;
+    max-width: 260px;
+    margin: 0 auto 30px;
+  }
 }
 
 .information__list {
@@ -13,6 +19,16 @@
   gap: 20px;
   justify-content: space-evenly;
   margin: 0;
+
+  @include vp-1279 {
+    max-width: 610px;
+    margin: 0 auto;
+  }
+
+  @include vp-1023 {
+    max-width: 344px;
+    margin: 0;
+  }
 }
 
 .information__item {
@@ -20,6 +36,10 @@
   align-items: center;
   justify-content: flex-start;
   gap: 30px;
+
+  @include vp-1023 {
+    gap: 6px;
+  }
 }
 
 .information__item dd {
@@ -27,6 +47,10 @@
   font-size: 35px;
   line-height: normal;
   margin: 0;
+
+  @include vp-1023 {
+    font-size: 16px;
+  }
 }
 
 .information__item a {
@@ -34,4 +58,24 @@
   color: #18bcbc;
   font-size: 35px;
   line-height: normal;
+
+  @include vp-1023 {
+    font-size: 16px;
+  }
+}
+
+.information__icon-desktop {
+  display: block;
+
+  @include vp-1023 {
+    display: none;
+  }
+}
+
+.information__icon-tablet {
+  display: none;
+
+  @include vp-1023 {
+    display: block;
+  }
 }

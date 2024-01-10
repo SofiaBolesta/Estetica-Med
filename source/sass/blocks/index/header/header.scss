@@ -1,8 +1,12 @@
 .header {
   width: 100%;
-  min-height: 1102px;
   padding: 0;
   margin: 0 0 142px;
+
+  @include vp-1023 {
+    height: auto;
+    margin: 0 0 80px;
+  }
 }
 
 .header__wrapper {
@@ -27,6 +31,14 @@
   justify-content: space-between;
 }
 
+.header__logotype {
+  user-select: none;
+
+  @include vp-1023 {
+    max-width: 99px;
+  }
+}
+
 .header__social-list {
   display: flex;
   flex-wrap: wrap;
@@ -34,12 +46,37 @@
   margin: 0;
   list-style-type: none;
   gap: 15px 56px;
+
+  @include vp-1023 {
+    gap: 15px 20px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
 }
 
 .header__social-link {
   display: block;
   width: 100%;
-  max-height: 72px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #ffffff;
+    box-shadow: 6px 6px 10px #116b6b;
+  }
+}
+
+.header__svg-desktop {
+  display: block;
+  width: calc(5vw - 0.21vw);
+  height: calc(5vw - 0.21vw);
+
+  @include vp-1023 {
+    width: calc(4vw - 0.38vw);
+    height: calc(4vw - 0.38vw);
+  }
 }
 
 .header__content {
@@ -61,6 +98,12 @@
   font-size: 60px;
   line-height: normal;
   margin: 0 0 23px;
+
+  @include vp-1023 {
+    max-width: 402px;
+    font-size: 30px;
+    margin: 0 0 14px;
+  }
 }
 
 .header__content p {
@@ -70,6 +113,12 @@
   text-align: center;
   font-size: 37px;
   line-height: normal;
+
+  @include vp-1023 {
+    max-width: 367px;
+    font-size: 20px;
+    margin: 0 0 36px;
+  }
 }
 
 .header__button {
@@ -83,6 +132,20 @@
   background: #18bcbc;
   border: none;
   width: 748px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #ffffff;
+    box-shadow: 3px 3px 15px rgba(13, 148, 148, 0.6);
+    text-shadow: 3px 3px 6px #116b6b;
+  }
+
+  @include vp-1023 {
+    font-size: 17px;
+    width: 402px;
+    padding: 13px;
+  }
 }
 
 .header__overlay {
@@ -92,6 +155,10 @@
   width: 100%;
   min-height: 1101px;
   background: linear-gradient(180deg, #18bcbc 16.77%, rgba(#18bcbc, 0) 85.61%);
+
+  @include vp-1023 {
+    min-height: 678px;
+  }
 }
 
 .header__background {
@@ -100,6 +167,10 @@
   top: 80px;
   width: 100%;
   max-height: 1024px;
+
+  @include vp-1023 {
+    max-height: 600px;
+  }
 }
 
 .header__background img {
@@ -107,4 +178,20 @@
   background-color: #ffffff;
   width: 100%;
   max-height: 1024px;
+
+  @include vp-1023 {
+    max-height: 600px;
+  }
+}
+
+.header__button-burger {
+  display: none;
+
+  @include vp-1023 {
+    display: none;
+  }
+
+  @include vp-767 {
+    display: block;
+  }
 }

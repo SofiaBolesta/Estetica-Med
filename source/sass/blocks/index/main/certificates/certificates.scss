@@ -1,6 +1,10 @@
 .certificates {
   width: 100%;
   margin-bottom: 170px;
+
+  @include vp-1023 {
+    margin-bottom: 80px;
+  }
 }
 
 .certificates__content {
@@ -20,4 +24,9 @@
   max-height: 480px;
   margin: 5px;
   cursor: pointer;
+
+  @include vp-1023 {
+    max-width: 200px;
+    max-height: 220px;
+  }
 }

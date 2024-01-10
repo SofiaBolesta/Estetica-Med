@@ -19,6 +19,20 @@
     top: 26px;
     background: url("../img/svg/title-desktop.svg") center no-repeat;
   }
+
+  @include vp-1023 {
+    font-size: 30px;
+    padding: 20px 100px 20px 59px;
+    margin: 0 0 40px;
+
+    &::before {
+      left: 34px;
+      top: 20px;
+      width: 19px;
+      height: 38px;
+      background: url("../img/svg/title-tablet.svg") center no-repeat;
+    }
+  }
 }
 
 /*.title-desktop {

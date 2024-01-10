@@ -6,15 +6,28 @@
   list-style-type: none;
   align-items: center;
   justify-content: space-between;
-  gap: 15px 10px;
+  gap: 15px 0;
 }
 
 .menu__link {
   display: block;
   color: #ffffff;
-  font-size: 30px;
+  font-size: clamp(1.4rem, -0.3rem + 2.33vw, 2.85rem);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding: 10px;
+  padding: 10px 5px 0 5px;
+  box-sizing: border-box;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #ffffff;
+    text-shadow: 3px 3px 6px #116b6b;
+  }
+
+  @include vp-1023 {
+    font-size: clamp(0.84rem, 0.55rem + 0.77vw, 1.25rem);
+    padding: 7px;
+  }
 }

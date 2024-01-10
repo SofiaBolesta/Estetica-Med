@@ -1,5 +1,9 @@
 .cosmetology {
   width: 573px;
+
+  @include vp-1023 {
+    width: 350px;
+  }
 }
 
 .cosmetology-list {
@@ -21,4 +25,9 @@
   font-size: 25px;
   color: #ffffff;
   padding: 20px 10px 20px 36px;
+
+  @include vp-1023 {
+    font-size: 16px;
+    padding: 13px 8px 13px 20px;
+  }
 }

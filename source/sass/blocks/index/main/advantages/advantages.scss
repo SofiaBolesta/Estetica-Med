@@ -1,6 +1,10 @@
 .advantages {
   width: 100%;
   margin-bottom: 170px;
+
+  @include vp-1023 {
+    margin-bottom: 80px;
+  }
 }
 
 .advantages__wrapper {
@@ -8,6 +12,7 @@
 }
 
 .advantages__main-content {
-  max-width: 1719px;
+  max-width: 1800px;
   margin: 0 auto;
+  padding: 0 40px;
 }

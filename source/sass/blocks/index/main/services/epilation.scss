@@ -15,10 +15,11 @@
   background-color: #18bcbc;
   border: 0;
   padding: 5px 10px 4px 36px;
-}
 
-.epilation__accordion-button p {
-  margin: 0;
+  @include vp-1023 {
+    font-size: 16px;
+    padding: 7px 8px 6px 20px;
+  }
 }
 
 .epilation__icon {
@@ -28,8 +29,11 @@
   justify-content: center;
 }
 
-.epilation__icon svg {
-  margin: auto;
+.epilation__icon-wrapper img {
+  @include vp-1023 {
+    width: 36px;
+    height: 36px;
+  }
 }
 
 .epilation__icon-open--hidden,
@@ -53,4 +57,9 @@
   font-size: 25px;
   color: #ffffff;
   padding: 20px 10px 20px 36px;
+
+  @include vp-1023 {
+    font-size: 16px;
+    padding: 15px 8px 14px 20px;
+  }
 }

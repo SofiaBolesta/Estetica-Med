@@ -11,6 +11,16 @@
   justify-content: space-between;
   margin: 0 auto;
   padding: 113px 50px;
+
+  @include vp-1279 {
+    gap: 0 10px;
+  }
+
+  @include vp-1023 {
+    grid-template-columns: minmax(auto, 300px) minmax(auto, 437px);
+    grid-template-rows: repeat(auto-fit, minmax(auto, 100px));
+    padding: 40px 50px;
+  }
 }
 
 .footer__logo {
@@ -19,12 +29,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include vp-1023 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+
+.footer__logo-wrapper img {
+  @include vp-1023 {
+    max-width: 166px;
+  }
 }
 
 .footer__list {
   grid-column: 2;
   display: grid;
-  max-width: 550px;
   grid-template-columns: repeat(2, minmax(auto, auto));
   grid-template-rows: repeat(auto-fit, minmax(auto, auto));
   align-items: center;
@@ -33,6 +53,18 @@
   margin: 0 auto;
   list-style-type: none;
   gap: 15px 40px;
+
+  @include vp-1279 {
+    grid-template-columns: repeat(1, minmax(auto, auto));
+  }
+
+  @include vp-1023 {
+    grid-template-columns: repeat(2, minmax(auto, auto));
+    grid-column: 2;
+    grid-row: 1/-1;
+    gap: 10px 5px;
+    margin: 20px auto;
+  }
 }
 
 .footer__item a {
@@ -43,6 +75,11 @@
   color: #ffffff;
   font-size: 30px;
   line-height: normal;
+
+  @include vp-1023 {
+    font-size: 20px;
+    gap: 10px;
+  }
 }
 
 .footer__social-list {
@@ -56,5 +93,39 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
+
+  @include vp-1279 {
+    flex-direction: column;
+  }
+
+  @include vp-1023 {
+    grid-column: 1;
+    grid-row: 2;
+    flex-direction: row;
+  }
+}
+
+.footer__social-link {
+  display: block;
+}
+
+.footer__link svg {
+  width: 19px;
+  height: 38px;
+
+  @include vp-1023 {
+    width: 16px;
+    height: 32px;
+  }
+}
+
+.footer__social-link svg {
+  width: 72px;
+  height: 72px;
+
+  @include vp-1023 {
+    width: 49px;
+    height: 49px;
+  }
 }
 
