@@ -10,6 +10,11 @@
   @include vp-1023 {
     margin: 0 auto 60px;
   }
+
+  @include vp-767 {
+    padding: 0;
+    gap: 0;
+  }
 }
 
 .services__accordion-cosmetology {
@@ -35,6 +40,11 @@
   @include vp-1023 {
     font-size: 16px;
     padding: 7px 8px 6px 20px;
+  }
+
+  @include vp-767 {
+    padding: 9px 20px;
+    font-size: clamp(1rem, 0.82rem + 0.47vw, 1.25rem);
   }
 }
 

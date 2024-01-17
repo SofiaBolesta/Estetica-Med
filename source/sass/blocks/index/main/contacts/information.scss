@@ -11,6 +11,10 @@
     max-width: 260px;
     margin: 0 auto 30px;
   }
+
+  @include vp-767 {
+    font-size: clamp(1rem, 0.88rem + 0.77vw, 1.25rem);
+  }
 }
 
 .information__list {
@@ -51,6 +55,10 @@
   @include vp-1023 {
     font-size: 16px;
   }
+
+  @include vp-767 {
+    font-size: clamp(0.75rem, 0.69rem + 0.38vw, 0.87rem);
+  }
 }
 
 .information__item a {
@@ -62,20 +70,18 @@
   @include vp-1023 {
     font-size: 16px;
   }
-}
 
-.information__icon-desktop {
-  display: block;
-
-  @include vp-1023 {
-    display: none;
+  @include vp-767 {
+    font-size: clamp(0.75rem, 0.69rem + 0.39vw, 0.87rem);
   }
 }
 
-.information__icon-tablet {
-  display: none;
+.information__icon {
+  width: 58px;
+  height: 57px;
 
   @include vp-1023 {
-    display: block;
+    width: 26px;
+    height: 26px;
   }
 }

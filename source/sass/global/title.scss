@@ -5,7 +5,7 @@
   line-height: normal;
   font-style: normal;
   background-color: #18bcbc;
-  font-size: 50px;
+  font-size: clamp(2.5rem, 2.05rem + 1.19vw, 3.12rem);
   padding: 42px 100px 43px 166px;
   position: relative;
   margin: 0 0 80px;
@@ -21,7 +21,7 @@
   }
 
   @include vp-1023 {
-    font-size: 30px;
+    font-size: clamp(1.87rem, 1.42rem + 1.19vw, 2.5rem);/*30px*/
     padding: 20px 100px 20px 59px;
     margin: 0 0 40px;
 
@@ -33,21 +33,17 @@
       background: url("../img/svg/title-tablet.svg") center no-repeat;
     }
   }
-}
 
-/*.title-desktop {
-  font-size: 50px;
-  padding: 42px 100px 43px 166px;
-  position: relative;
-  margin: 0 0 80px;
+  @include vp-767 {
+    font-size: clamp(1.12rem, 0.81rem + 0.83vw, 1.56rem);
+    padding: 9px 10px 9px 42px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 46px;
-    height: 99px;
-    left: 102px;
-    top: 26px;
-    background: url("../img/svg/title-desktop.svg") center no-repeat;
+    &::before {
+      left: 20px;
+      top: 6px;
+      width: 16px;
+      height: 32px;
+      background: url("../img/svg/title-mobile.svg") center no-repeat;
+    }
   }
-}*/
+}
