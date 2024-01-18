@@ -1582,6 +1582,7 @@ button,
 @media (max-width: 767px) {
   .header__container-menu {
     margin: 0;
+    padding: 10px 30px 0;
   }
 }
 
@@ -1730,7 +1731,7 @@ button,
   position: relative;
   z-index: 2;
   gap: 4vh 0;
-  background-color: #18bcbc;
+  background-color: rgba(24, 188, 188, 0.8);
 }
 @media (max-width: 767px) {
   .header__content {
@@ -2063,7 +2064,7 @@ button,
   .menu {
     position: absolute;
     right: -100%;
-    top: 132px;
+    top: 110px;
     width: 100%;
     height: 426px;
     background-color: #18bcbc;
@@ -2073,7 +2074,6 @@ button,
     transition: transform 0.5s, visibility 0.5s;
     transition: transform 0.5s, visibility 0.5s, -webkit-transform 0.5s;
     will-change: transform;
-    /*overflow: auto;*/
   }
 }
 
