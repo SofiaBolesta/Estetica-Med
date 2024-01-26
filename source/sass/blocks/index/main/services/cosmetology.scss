@@ -39,4 +39,10 @@
     font-size: clamp(1rem, 0.82rem + 0.47vw, 1.25rem);
     padding: 15px 8px 14px 20px;
   }
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-shadow: 1px 1px 0 #1a9a9a;
+  }
 }

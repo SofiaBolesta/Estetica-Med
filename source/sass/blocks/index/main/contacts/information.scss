@@ -67,6 +67,13 @@
   font-size: 35px;
   line-height: normal;
 
+  &:active,
+  &:hover,
+  &:visited,
+  &:focus {
+    text-shadow: 1px 1px 1px rgba(#1a9a9a, 80%);
+  }
+
   @include vp-1023 {
     font-size: 16px;
   }

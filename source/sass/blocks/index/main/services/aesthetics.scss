@@ -35,6 +35,12 @@
     padding: 9px 20px;
     font-size: clamp(1rem, 0.82rem + 0.47vw, 1.25rem);
   }
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-shadow: 1px 1px 0 #1a9a9a;
+  }
 }
 
 .aesthetics__accordion-button p {

@@ -13,6 +13,10 @@
 
 .specialist__swiper {
   max-width: 1718px;
+
+  @include vp-1023 {
+    max-width: 689px;
+  }
 }
 
 .specialist__container-swiper {
@@ -22,10 +26,22 @@
   max-width: 1800px;
   margin: 0 auto;
   padding: 0 40px;
+
+  @include vp-767 {
+    margin: 0 10px;
+  }
 }
 
 .specialist__swiper-wrapper {
   max-width: 1451px;
+}
+
+.specialist__swiper-slide {
+  gap: 20px;
+
+  @include vp-1023 {
+    gap: 0;
+  }
 }
 
 .specialist__kitaevskaya,
@@ -35,6 +51,7 @@
 .specialist__teterina,
 .specialist__ermilina {
   max-width: 622px;
+  user-select: none;
 
   @include vp-1023 {
     max-width: 251px;
@@ -106,12 +123,26 @@
   max-width: 435px;
   margin: 0;
 
+  &:hover {
+    text-shadow: 1px 1px 0 #139d9d;
+  }
+
   @include vp-1023 {
     font-size: 20px;
   }
 
   @include vp-767 {
     font-size: clamp(1.12rem, 1.06rem + 0.38vw, 1.25rem);
+  }
+}
+
+.specialist__swiper-button {
+  &:hover {
+    color: #11a4a4;
+  }
+
+  &:active {
+    color: #07dada;
   }
 }
 
