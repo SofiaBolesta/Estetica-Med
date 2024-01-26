@@ -120,12 +120,14 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
+  max-width: 400px;
 
   @include vp-1023 {
     grid-column: 1/-1;
     grid-row: 2;
     flex-direction: row;
     align-self: center;
+    max-width: 100%;
   }
 
   @include vp-767 {

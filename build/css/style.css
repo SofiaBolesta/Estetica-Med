@@ -2481,6 +2481,7 @@ button,
   background-color: #18bcbc;
   border: 0;
   margin: 0;
+  text-align: left;
 }
 @media (max-width: 1023px) {
   .services__accordion-button {
@@ -3380,6 +3381,7 @@ button,
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   gap: 25px;
+  padding: 0 20px;
 }
 
 .certificates__gallery img {
@@ -3840,6 +3842,7 @@ button,
   padding: 0;
   margin: 0;
   list-style-type: none;
+  max-width: 400px;
 }
 @media (max-width: 1023px) {
   .footer__social-list {
@@ -3852,6 +3855,7 @@ button,
             flex-direction: row;
     -ms-grid-row-align: center;
         align-self: center;
+    max-width: 100%;
   }
 }
 @media (max-width: 767px) {
