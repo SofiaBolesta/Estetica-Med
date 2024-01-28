@@ -1,0 +1,167 @@
+.about-us {
+  width: 100%;
+  margin-bottom: 170px;
+
+  @include vp-1023 {
+    margin-bottom: 80px;
+  }
+}
+
+.about-us__wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  padding: 0 100px;
+  box-sizing: border-box;
+
+  @include vp-1023 {
+    padding: 0 30px;
+    gap: 20px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+    gap: 15px;
+  }
+}
+
+.about-us__title {
+  margin: 0 0 20px;
+}
+
+.about-us__wrapper h3 {
+  color: #ffffff;
+  font-size: clamp(2.5rem, 2.05rem + 1.19vw, 3.12rem);
+  font-weight: 700;
+  background-color: #18bcbc;
+  text-align: center;
+  padding: 41px 40px;
+  margin: 0;
+  line-height: normal;
+
+  @include vp-1023 {
+    font-size: clamp(1.37rem, 1.02rem + 0.95vw, 1.88rem);
+    padding: 19px 10px;
+  }
+
+  @include vp-767 {
+    font-size: clamp(1rem, 0.86rem + 0.35vw, 1.18rem);
+    padding: 10px 20px;
+  }
+}
+
+.about-us__wrapper p {
+  color: #ffffff;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  background-color: #18bcbc;
+  padding: 41px 40px;
+  margin: 0;
+  line-height: normal;
+
+  @include vp-1023 {
+    font-size: clamp(1.25rem, 1.16rem + 0.24vw, 1.37rem);
+    padding: 16px 10px;
+  }
+
+  @include vp-767 {
+    font-size: clamp(0.87rem, 0.78rem + 0.23vw, 1rem);
+    padding: 10px 20px;
+  }
+}
+
+.about-us__wrapper-back {
+  width: 100%;
+  background-color: #18bcbc;
+  padding: 41px 0;
+
+  @include vp-1023 {
+    padding: 16px 0;
+  }
+
+  @include vp-767 {
+    padding: 10px 0;
+  }
+}
+
+.about-us__wrapper-list {
+  margin: 0 auto;
+  max-width: 655px;
+
+  @include vp-1023 {
+    padding: 0 20px;
+    max-width: 440px;
+  }
+}
+
+.about-us__wrapper-list p {
+  background-color: transparent;
+  padding: 0;
+  text-align: left;
+  margin-bottom: 30px;
+
+  @include vp-1023 {
+    font-size: clamp(1.25rem, 1.03rem + 0.59vw, 1.56rem);
+    margin-bottom: 12px;
+  }
+
+  @include vp-767 {
+    font-size: clamp(0.87rem, 0.78rem + 0.23vw, 1rem);
+    margin-bottom: 8px;
+  }
+}
+
+.about-us__list {
+  padding: 0 0 0 20px;
+  margin: 0 auto;
+  max-width: 655px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @include vp-1023 {
+    gap: 10px;
+  }
+}
+
+.about_us__item {
+  color: #ffffff;
+  font-size: 30px;
+  line-height: normal;
+
+  @include vp-1023 {
+    font-size: clamp(1.06rem, 0.93rem + 0.35vw, 1.25rem);
+  }
+
+  @include vp-767 {
+    font-size: clamp(0.87rem, 0.78rem + 0.23vw, 1rem);
+  }
+}
+
+.about-us__honors-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  align-items: center;
+  justify-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 50px 0 0;
+  gap: 10px;
+
+  @include vp-1023 {
+    grid-template-columns: repeat(2, minmax(220px, auto));
+    gap: 30px;
+    align-items: stretch;
+    justify-items: stretch;
+  }
+
+  @include vp-767 {
+    grid-template-columns: minmax(130px, auto) 3px minmax(130px, auto);
+    grid-template-rows: minmax(72px, auto) 3px minmax(72px, auto);
+    margin: 20px 0 0;
+    gap: 10px;
+  }
+}

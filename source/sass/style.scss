@@ -21,8 +21,8 @@
 
 // Blocks
 // ---------------------------------
-@import "blocks/index/header/header";
-@import "blocks/index/header/menu";
+@import "blocks/header/header";
+@import "blocks/header/menu";
 @import "blocks/index/main/advantages/advantages";
 @import "blocks/index/main/advantages/content";
 @import "blocks/index/main/services/services";
@@ -38,7 +38,11 @@
 @import "blocks/index/main/contacts/contacts";
 @import "blocks/index/main/contacts/information";
 @import "blocks/index/modal/modal";
-@import "blocks/index/footer/footer";
+@import "blocks/footer/footer";
+
+// about-company
+@import "blocks/about-company/about-us";
+@import "blocks/about-company/honors";
 
 // ---------------------------------
 

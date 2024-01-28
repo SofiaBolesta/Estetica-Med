@@ -54,6 +54,7 @@
   &:visited {
     color: #ffffff;
     text-shadow: 2px 2px 0 #1a9a9a;
+    text-decoration: underline;
   }
 
   @include vp-1023 {
