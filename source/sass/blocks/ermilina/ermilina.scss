@@ -1,0 +1,16 @@
+.ermilina {
+  max-width: 100%;
+  margin-bottom: 180px;
+
+  @include vp-1023 {
+    margin-bottom: 80px;
+  }
+}
+
+.ermilina__title {
+  margin-bottom: 60px;
+}
+
+.ermilina__wrapper {
+  margin: 0 0 80px;
+}
