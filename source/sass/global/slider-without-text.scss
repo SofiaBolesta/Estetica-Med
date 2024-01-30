@@ -1,4 +1,4 @@
-.offices__container-swiper {
+.slider-without-text__container-swiper {
   display: flex;
   position: relative;
   flex-direction: row;
@@ -7,12 +7,12 @@
   padding: 0 80px;
 }
 
-.offices__swiper-wrapper {
+.slider-without-text__swiper-wrapper {
   display: flex;
   max-width: 1404px;
 }
 
-.offices__swiper-slide {
+.slider-without-text__swiper-slide {
   max-width: 622px;
   user-select: none;
 
@@ -21,20 +21,21 @@
   }
 }
 
-.offices__photo {
+.slider-without-text__photo {
   display: block;
   width: 100%;
+  max-height: 600px;
   justify-content: center;
   align-items: center;
 }
 
-.offices__photo img {
+.slider-without-text__photo img {
   object-fit: cover;
   width: 100%;
   height: auto;
 }
 
-.offices__swiper-button::after {
+.slider-without-text__swiper-button::after {
   font-size: 67px;
 
   @include vp-1023 {

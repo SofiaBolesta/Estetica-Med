@@ -1,10 +1,10 @@
 import Swiper from '../js/vendor/swiper.js';
-const officesSwiper = document.querySelector('.offices__swiper');
+const sliderWithoutTextSwiper = document.querySelector('.slider-without-text__swiper');
 
-export const initOfficesSwiper = () => {
-  if (officesSwiper) {
+export const initSliderWithoutTextSwiper = () => {
+  if (sliderWithoutTextSwiper) {
     (() =>
-      new Swiper('.offices__swiper', {
+      new Swiper('.slider-without-text__swiper', {
         direction: 'horizontal',
         loop: true,
         navigation: {

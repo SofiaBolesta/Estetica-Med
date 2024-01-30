@@ -18,6 +18,8 @@
 @import "global/container";
 @import "global/title";
 @import "global/wrapper";
+@import "global/slider-with-text";
+@import "global/slider-without-text";
 
 // Blocks
 // ---------------------------------
@@ -49,9 +51,9 @@
 
 // gallery
 @import "blocks/gallery/gallery";
-@import "blocks/gallery/offices";
-@import "blocks/gallery/work";
-@import "blocks/gallery/cosmetic";
+
+// kitaevskaya
+@import "blocks/kitaevskaya/kitaevskaya";
 
 // ---------------------------------
 

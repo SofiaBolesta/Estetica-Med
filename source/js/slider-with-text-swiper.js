@@ -1,10 +1,10 @@
 import Swiper from '../js/vendor/swiper.js';
-const cosmeticSwiper = document.querySelector('.cosmetic__swiper');
+const sliderWithTextSwiper = document.querySelector('.slider-with-text__swiper');
 
-export const initCosmeticSwiper = () => {
-  if (cosmeticSwiper) {
+export const initSliderWithTextSwiper = () => {
+  if (sliderWithTextSwiper) {
     (() =>
-      new Swiper('.cosmetic__swiper', {
+      new Swiper('.slider-with-text__swiper', {
         direction: 'horizontal',
         loop: true,
         navigation: {
