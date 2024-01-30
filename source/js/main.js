@@ -8,7 +8,10 @@ import {
 } from './accordions-button';
 import {initSpecialistSwiper} from './specialist-swiper';
 import {initModalGallery} from './modal-gallery';
-import {initMenu} from './burger-menu.js';
+import {initMenu} from './burger-menu';
+import {initOfficesSwiper} from './offices-swiper';
+import {initWorkSwiper} from './work-swiper';
+import {initCosmeticSwiper} from './cosmetic-swiper';
 window.addEventListener('DOMContentLoaded', () => {
   // Utils
   // ---------------------------------
@@ -24,6 +27,9 @@ window.addEventListener('DOMContentLoaded', () => {
   showButtonEpilation();
   initSpecialistSwiper();
   initMenu();
+  initOfficesSwiper();
+  initWorkSwiper();
+  initCosmeticSwiper();
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {

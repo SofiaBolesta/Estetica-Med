@@ -1,0 +1,47 @@
+.offices__container-swiper {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  max-width: 1445px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.offices__swiper-wrapper {
+  display: flex;
+  max-width: 1404px;
+}
+
+.offices__swiper-slide {
+  max-width: 622px;
+  user-select: none;
+
+  @include vp-1023 {
+    gap: 0;
+  }
+}
+
+.offices__photo {
+  display: block;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.offices__photo img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.offices__swiper-button::after {
+  font-size: 67px;
+
+  @include vp-1023 {
+    font-size: 40px;
+  }
+
+  @include vp-767 {
+    font-size: 30px;
+  }
+}
