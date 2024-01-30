@@ -1,0 +1,16 @@
+.drozdova {
+  max-width: 100%;
+  margin-bottom: 180px;
+
+  @include vp-1023 {
+    margin-bottom: 80px;
+  }
+}
+
+.drozdova__title {
+  margin-bottom: 60px;
+}
+
+.drozdova__wrapper {
+  margin: 0 0 80px;
+}
