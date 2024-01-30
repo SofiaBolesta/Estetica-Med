@@ -2348,6 +2348,21 @@ button,
   }
 }
 
+.menu__link-services,
+.menu__link-contacts {
+  border: none;
+  background-color: transparent;
+}
+.menu__link-services:hover, .menu__link-services:active, .menu__link-services:focus, .menu__link-services:visited,
+.menu__link-contacts:hover,
+.menu__link-contacts:active,
+.menu__link-contacts:focus,
+.menu__link-contacts:visited {
+  color: #ffffff;
+  text-shadow: 2px 2px 0 #1a9a9a;
+  text-decoration: underline;
+}
+
 .advantages {
   width: 100%;
   margin-bottom: 170px;
@@ -4080,6 +4095,44 @@ button,
     width: 49px;
     height: 49px;
   }
+}
+
+.footer__link-services,
+.footer__link-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: clamp(1.25rem, 0.8rem + 1.19vw, 1.87rem);
+  line-height: normal;
+  gap: 15px;
+}
+@media (max-width: 1023px) {
+  .footer__link-services,
+.footer__link-contacts {
+    font-size: clamp(1.37rem, 1.15rem + 0.59vw, 1.68rem);
+    gap: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .footer__link-services,
+.footer__link-contacts {
+    font-size: clamp(1.18rem, 0.92rem + 0.71vw, 1.56rem);
+  }
+}
+.footer__link-services:hover, .footer__link-services:active, .footer__link-services:focus, .footer__link-services:visited,
+.footer__link-contacts:hover,
+.footer__link-contacts:active,
+.footer__link-contacts:focus,
+.footer__link-contacts:visited {
+  color: #ffffff;
+  text-shadow: 2px 2px 0 #1a9a9a;
 }
 
 .about-us {

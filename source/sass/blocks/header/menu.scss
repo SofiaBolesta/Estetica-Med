@@ -79,3 +79,18 @@
     height: 32px;
   }
 }
+
+.menu__link-services,
+.menu__link-contacts {
+  border: none;
+  background-color: transparent;
+
+  &:hover,
+  &:active,
+  &:focus,
+  &:visited {
+    color: #ffffff;
+    text-shadow: 2px 2px 0 #1a9a9a;
+    text-decoration: underline;
+  }
+}

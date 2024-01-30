@@ -168,3 +168,32 @@
   }
 }
 
+.footer__link-services,
+.footer__link-contacts {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: clamp(1.25rem, 0.8rem + 1.19vw, 1.87rem);
+  line-height: normal;
+  gap: 15px;
+
+  @include vp-1023 {
+    font-size: clamp(1.37rem, 1.15rem + 0.59vw, 1.68rem);
+    gap: 10px;
+  }
+
+  @include vp-767 {
+    font-size: clamp(1.18rem, 0.92rem + 0.71vw, 1.56rem);
+  }
+
+  &:hover,
+  &:active,
+  &:focus,
+  &:visited {
+    color: #ffffff;
+    text-shadow: 2px 2px 0 #1a9a9a;
+  }
+}
