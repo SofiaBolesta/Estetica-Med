@@ -1,6 +1,10 @@
 .gallery {
   width: 100%;
   margin-bottom: 180px;
+
+  @include vp-1023 {
+    margin-bottom: 80px;
+  }
 }
 
 .gallery__wrapper {
