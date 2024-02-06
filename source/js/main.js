@@ -12,6 +12,7 @@ import {initMenu} from './burger-menu';
 import {initSliderWithTextSwiper} from './slider-with-text-swiper';
 import {initSliderWithoutTextSwiper} from './slider-without-text-swiper';
 import {menuScroll} from './menu-scroll';
+import {initHeaderSwiper} from './header-swiper';
 
 window.addEventListener('DOMContentLoaded', () => {
   // Utils
@@ -19,6 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   // ---------------------------------
+  initHeaderSwiper();
   showButtonText();
   showButtonThreadLifting();
   showButtonElos();
