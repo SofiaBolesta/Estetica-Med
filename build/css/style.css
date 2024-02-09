@@ -2333,6 +2333,7 @@ button,
     display: block;
     width: 15px;
     height: 32px;
+    fill: #ffffff;
   }
 }
 
@@ -2476,6 +2477,7 @@ button,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  fill: #18bcbc;
 }
 
 .content__icon {
@@ -2523,6 +2525,7 @@ button,
 .content__icon-mini {
   width: 136px;
   height: 177px;
+  fill: #ffffff;
 }
 @media (max-width: 1023px) {
   .content__icon-mini {
@@ -3800,6 +3803,7 @@ button,
 .information__icon {
   width: 58px;
   height: 57px;
+  fill: transparent;
 }
 @media (max-width: 1023px) {
   .information__icon {
@@ -4066,6 +4070,7 @@ button,
 .footer__link svg {
   width: 19px;
   height: 38px;
+  fill: #ffffff;
 }
 @media (max-width: 1023px) {
   .footer__link svg {
@@ -4408,6 +4413,7 @@ button,
       align-self: center;
   -ms-grid-column-align: end;
       justify-self: end;
+  fill: transparent;
 }
 @media (max-width: 1023px) {
   .honors__icon {
@@ -4439,6 +4445,10 @@ button,
   .honors__item-arrows {
     display: none;
   }
+}
+
+.honors__item-arrows svg {
+  fill: transparent;
 }
 
 .honors__item-wrap-mobile {

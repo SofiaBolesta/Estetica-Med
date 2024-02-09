@@ -86,6 +86,7 @@
 .information__icon {
   width: 58px;
   height: 57px;
+  fill: transparent;
 
   @include vp-1023 {
     width: 26px;

@@ -63,6 +63,7 @@
 .honors__icon {
   align-self: center;
   justify-self: end;
+  fill: transparent;
 
   @include vp-1023 {
     width: 38px;
@@ -91,6 +92,10 @@
   @include vp-1023 {
     display: none;
   }
+}
+
+.honors__item-arrows svg {
+  fill: transparent;
 }
 
 .honors__item-wrap-mobile {
