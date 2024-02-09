@@ -5022,6 +5022,7 @@ button,
 .detailed__prices-icon {
   width: 25px;
   height: 25px;
+  fill: #ffffff;
 }
 @media (max-width: 1023px) {
   .detailed__prices-icon {
